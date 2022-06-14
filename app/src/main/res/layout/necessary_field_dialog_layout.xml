@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="360dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_btn"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:id="@+id/heading"
+            android:gravity="center"
+            android:text="Your profile\n(Required details)"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/heading"
+            android:textColor="@color/white"
+            android:text="phoneNumber"
+            android:id="@+id/show_phoneNumber"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show_phoneNumber"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/border4"
+                android:hint="Your full name"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:paddingStart="8dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/et_pinCode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/border4"
+                android:hint="Your area pin code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:paddingStart="8dp"
+                android:singleLine="true" />
+
+            <Spinner
+                android:id="@+id/sp_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/custom_spinner"
+                android:elevation="4dp"
+                android:spinnerMode="dropdown" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/ll"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="You have accepted our">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#4FC0F3"
+                android:id="@+id/pp_lnk"
+                android:text=" privacy policy">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:id="@+id/proceed_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            app:cardElevation="0dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="100dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_btn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:text="Proceed"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="italic">
+
+                </TextView>
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_arrow"
+                    android:background="@drawable/white_circulatr_back"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_bulb"
+            android:textSize="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp"
+            android:layout_above="@id/proceed_btn"
+            android:layout_centerHorizontal="true"
+            android:text="You can change Name and PinCode anytime"/>
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/circle_anim" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

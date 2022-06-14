@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602363414287",
+    "project_id": "zip-chat-630e3",
+    "storage_bucket": "zip-chat-630e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602363414287:android:720a7e566a16aa84a1a07a",
+        "android_client_info": {
+          "package_name": "com.mac.zipchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602363414287-v8v12lbhmqre09k8gndpdf3vtm4h28ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4PYNkTD_cokXVQIuQNebp2OuG5GxVWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602363414287-v8v12lbhmqre09k8gndpdf3vtm4h28ql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

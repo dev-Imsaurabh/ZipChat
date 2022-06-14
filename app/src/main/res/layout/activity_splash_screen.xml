@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_btn"
+    android:orientation="vertical"
+    tools:context=".Splash_Screen_Activity">
+
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/ripple_effect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_color="#FFFFFF"
+        app:rb_duration="1000"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+    </com.skyfishjy.library.RippleBackground>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:drawableStart="@drawable/ic_search"
+        android:gravity="center_vertical"
+        android:drawablePadding="4dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/custom_font"
+        android:text="Chat with people in your PinCode"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/location_pin"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:elevation="10dp"
+        android:layout_centerInParent="true"
+        android:padding="100dp"
+        android:src="@drawable/app_icon4" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/ic_swach_bharat"/>-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/india_map"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/ic_svg_inida_map" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/location_pin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:scaleY="1.1"-->
+<!--        android:src="@drawable/ic_svg_location_pin" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:id="@+id/trash"-->
+<!--        android:layout_marginBottom="130dp"-->
+<!--        android:src="@drawable/ic_svg_trash"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:drawableStart="@drawable/ic_bulb"
+        android:drawablePadding="8dp"
+        android:text="Chat with random people in your PinCode"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="@string/app_name"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:drawableStart="@drawable/indian_flag"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:text="For Dating"
+        android:textColor="@color/white" />
+
+
+
+
+
+</RelativeLayout>
